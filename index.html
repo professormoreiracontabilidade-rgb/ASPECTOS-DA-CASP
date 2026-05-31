@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aspectos da CASP</title>
+<title>CASP - Aspectos</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -14,17 +15,17 @@ box-sizing:border-box;
 
 body{
 font-family:Arial,Helvetica,sans-serif;
-background:#06162e;
+background:#041C3A;
 color:white;
-overflow:hidden;
+overflow-x:hidden;
 }
 
 .slide{
 display:none;
-height:100vh;
-padding:24px;
-overflow-y:auto;
-padding-bottom:110px;
+width:100%;
+min-height:100vh;
+padding:20px;
+padding-bottom:100px;
 }
 
 .slide.active{
@@ -32,7 +33,6 @@ display:block;
 }
 
 .capa{
-background:linear-gradient(160deg,#06162e,#0b3d91,#123c69);
 text-align:center;
 display:flex;
 flex-direction:column;
@@ -41,144 +41,183 @@ align-items:center;
 }
 
 .logo{
-font-size:20px;
-font-weight:bold;
-background:#ffffff22;
-padding:12px 18px;
-border-radius:20px;
-margin-bottom:35px;
-}
-
-.titulo-capa{
-font-size:58px;
-font-weight:900;
-color:#ffd54f;
-margin-bottom:25px;
-}
-
-.subtitulo-capa{
-font-size:28px;
-font-weight:bold;
-line-height:1.4;
-margin-bottom:25px;
-}
-
-.texto-capa{
-font-size:24px;
-line-height:1.5;
-max-width:390px;
-margin-bottom:25px;
-}
-
-.lista-capa{
-font-size:25px;
-line-height:1.8;
-font-weight:bold;
-background:#ffffff22;
-padding:20px;
-border-radius:18px;
-}
-
-.selo{
-text-align:center;
-font-size:27px;
-font-weight:bold;
-padding:15px;
+background:#0D47A1;
+padding:12px 20px;
 border-radius:15px;
+font-size:18px;
+font-weight:bold;
+margin-bottom:30px;
+}
+
+.titulo{
+font-size:70px;
+font-weight:900;
+color:#FFD54F;
 margin-bottom:20px;
 }
 
-.orc{background:#1565c0;}
-.pat{background:#2e7d32;}
-.fis{background:#c62828;}
-.res{background:#f9a825;color:#000;}
-
-h1{
-font-size:34px;
-text-align:center;
-margin-bottom:25px;
+.subtitulo{
+font-size:28px;
+font-weight:bold;
+line-height:1.4;
+margin-bottom:30px;
 }
 
-p,li{
-font-size:25px;
-line-height:1.55;
+.texto{
+font-size:24px;
+line-height:1.6;
+max-width:400px;
+}
+
+.lista{
+margin-top:25px;
+background:#ffffff15;
+padding:20px;
+border-radius:15px;
+font-size:24px;
+font-weight:bold;
+line-height:2;
+}
+
+.selo{
+font-size:26px;
+font-weight:bold;
+padding:15px;
+border-radius:15px;
+text-align:center;
+margin-bottom:20px;
+}
+
+.azul{
+background:#1565C0;
+}
+
+.verde{
+background:#2E7D32;
+}
+
+.vermelho{
+background:#C62828;
+}
+
+.amarelo{
+background:#FFD54F;
+color:#000;
+}
+
+h1{
+font-size:32px;
+text-align:center;
+margin-bottom:20px;
+}
+
+p{
+font-size:23px;
+line-height:1.6;
 }
 
 ul{
+margin-top:15px;
 margin-left:25px;
+}
+
+li{
+font-size:23px;
+line-height:1.6;
+margin-bottom:8px;
+}
+
+.box{
+background:#ffffff15;
+padding:15px;
+border-radius:15px;
 margin-top:15px;
 }
 
-.destaque{
-background:#ffffff22;
-padding:16px;
-border-radius:14px;
-margin-top:18px;
+.rodape{
+text-align:center;
+margin-top:25px;
+font-size:14px;
+opacity:0.8;
 }
 
 .nav{
 position:fixed;
-bottom:12px;
+bottom:0;
 left:0;
 width:100%;
+background:#021126;
+padding:10px;
 display:flex;
-justify-content:center;
 gap:8px;
-padding:0 8px;
+z-index:9999;
 }
 
 button{
-font-size:18px;
-padding:12px 13px;
+flex:1;
+height:55px;
 border:none;
 border-radius:12px;
+font-size:18px;
 font-weight:bold;
 cursor:pointer;
 }
 
-.voltar{background:#757575;color:white;}
-.proximo{background:#2196f3;color:white;}
-.reiniciar{background:#ff9800;color:white;}
-
-.rodape{
-text-align:center;
-font-size:14px;
-margin-top:25px;
-opacity:.85;
+.voltar{
+background:#455A64;
+color:white;
 }
+
+.reiniciar{
+background:#FF9800;
+color:white;
+}
+
+.proximo{
+background:#1565C0;
+color:white;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- CAPA -->
+
 <div class="slide active capa">
-<div class="logo">CURSO DE CONTABILIDADE PROFESSOR MOREIRA</div>
 
-<div class="titulo-capa">CASP</div>
-
-<div class="subtitulo-capa">
-Contabilidade Aplicada<br>
-ao Setor Público
+<div class="logo">
+CURSO DE CONTABILIDADE PROFESSOR MOREIRA
 </div>
 
-<div class="texto-capa">
+<div class="titulo">
+CASP
+</div>
+
+<div class="subtitulo">
+Contabilidade Aplicada ao Setor Público
+</div>
+
+<div class="texto">
 A Contabilidade Aplicada ao Setor Público possui três aspectos principais para interpretar corretamente as informações contábeis.
 </div>
 
-<div class="lista-capa">
-São eles:<br><br>
+<div class="lista">
 🟦 Aspecto Orçamentário<br>
 🟩 Aspecto Patrimonial<br>
 🟥 Aspecto Fiscal
 </div>
 
-<div class="rodape">
-Curso de Contabilidade Professor Moreira
-</div>
 </div>
 
+<!-- ORÇAMENTÁRIO -->
+
 <div class="slide">
-<div class="selo orc">🟦 ASPECTO ORÇAMENTÁRIO</div>
+
+<div class="selo azul">
+🟦 ASPECTO ORÇAMENTÁRIO
+</div>
 
 <h1>ORÇAMENTÁRIO</h1>
 
@@ -186,16 +225,28 @@ Curso de Contabilidade Professor Moreira
 Compreende o registro e a evidenciação do orçamento público, desde sua aprovação até sua execução.
 </p>
 
-<div class="destaque">
-<p><b>Principais Demonstrativos</b></p>
+<div class="box">
+
+<b>Principais Demonstrativos</b>
+
 <ul>
 <li><b>RREO</b> = Relatório Resumido da Execução Orçamentária</li>
-<li><b>Balanço Orçamentário</b><br>Demonstra receitas e despesas previstas e executadas.</li>
-<li><b>Balanço Financeiro</b><br>Demonstra entradas e saídas de recursos financeiros.</li>
+
+<li>
+<b>Balanço Orçamentário</b><br>
+Demonstra receitas e despesas previstas e executadas.
+</li>
+
+<li>
+<b>Balanço Financeiro</b><br>
+Demonstra entradas e saídas de recursos financeiros.
+</li>
+
 </ul>
+
 </div>
 
-<div class="destaque">
+<div class="box">
 <b>FOCO:</b><br>
 ORÇAMENTO PÚBLICO
 </div>
@@ -203,10 +254,16 @@ ORÇAMENTO PÚBLICO
 <div class="rodape">
 Curso de Contabilidade Professor Moreira
 </div>
+
 </div>
 
+<!-- PATRIMONIAL -->
+
 <div class="slide">
-<div class="selo pat">🟩 ASPECTO PATRIMONIAL</div>
+
+<div class="selo verde">
+🟩 ASPECTO PATRIMONIAL
+</div>
 
 <h1>PATRIMONIAL</h1>
 
@@ -214,26 +271,37 @@ Curso de Contabilidade Professor Moreira
 Compreende o registro e a evidenciação da composição patrimonial do ente público.
 </p>
 
-<div class="destaque">
-<p><b>Envolve:</b></p>
+<div class="box">
+
+<b>Envolve:</b>
+
 <ul>
 <li>Ativos</li>
 <li>Passivos</li>
 <li>Variações Patrimoniais</li>
 </ul>
+
 </div>
 
-<div class="destaque">
-<p><b>Principais Demonstrativos</b></p>
+<div class="box">
+
+<b>Principais Demonstrativos</b>
+
 <ul>
+
 <li><b>BP</b> = Balanço Patrimonial</li>
+
 <li><b>DVP</b> = Demonstração das Variações Patrimoniais</li>
+
 <li><b>VPA</b> = Variação Patrimonial Aumentativa</li>
+
 <li><b>VPD</b> = Variação Patrimonial Diminutiva</li>
+
 </ul>
+
 </div>
 
-<div class="destaque">
+<div class="box">
 <b>FOCO:</b><br>
 PATRIMÔNIO PÚBLICO
 </div>
@@ -241,19 +309,27 @@ PATRIMÔNIO PÚBLICO
 <div class="rodape">
 Curso de Contabilidade Professor Moreira
 </div>
+
 </div>
 
+<!-- FISCAL -->
+
 <div class="slide">
-<div class="selo fis">🟥 ASPECTO FISCAL</div>
+
+<div class="selo vermelho">
+🟥 ASPECTO FISCAL
+</div>
 
 <h1>FISCAL</h1>
 
 <p>
-Compreende a apuração e evidenciação dos indicadores fiscais estabelecidos pela LRF.
+Compreende a apuração e evidenciação dos indicadores estabelecidos pela LRF.
 </p>
 
-<div class="destaque">
-<p><b>LRF</b> = Lei de Responsabilidade Fiscal</p>
+<div class="box">
+
+<b>LRF = Lei de Responsabilidade Fiscal</b>
+
 <ul>
 <li>Despesa com pessoal</li>
 <li>Operações de crédito</li>
@@ -262,17 +338,21 @@ Compreende a apuração e evidenciação dos indicadores fiscais estabelecidos p
 <li>Resultado primário</li>
 <li>Resultado nominal</li>
 </ul>
+
 </div>
 
-<div class="destaque">
-<p><b>Principais Relatórios</b></p>
+<div class="box">
+
+<b>Principais Relatórios</b>
+
 <ul>
 <li><b>RGF</b> = Relatório de Gestão Fiscal</li>
 <li><b>RREO</b> = Relatório Resumido da Execução Orçamentária</li>
 </ul>
+
 </div>
 
-<div class="destaque">
+<div class="box">
 <b>FOCO:</b><br>
 EQUILÍBRIO DAS CONTAS PÚBLICAS
 </div>
@@ -280,82 +360,122 @@ EQUILÍBRIO DAS CONTAS PÚBLICAS
 <div class="rodape">
 Curso de Contabilidade Professor Moreira
 </div>
+
 </div>
 
+<!-- RESUMO -->
+
 <div class="slide">
-<div class="selo res">🟨 RESUMO MATADOR FGV</div>
+
+<div class="selo amarelo">
+🟨 RESUMO MATADOR FGV
+</div>
 
 <h1>DECORAÇÃO DE PROVA</h1>
 
-<div class="destaque">
-<p><b>ASPECTO ORÇAMENTÁRIO</b></p>
+<div class="box">
+<b>ORÇAMENTÁRIO</b><br><br>
 RREO<br>
 Balanço Orçamentário<br>
 Balanço Financeiro
 </div>
 
-<div class="destaque">
-<p><b>ASPECTO PATRIMONIAL</b></p>
+<div class="box">
+<b>PATRIMONIAL</b><br><br>
 BP<br>
 DVP
 </div>
 
-<div class="destaque">
-<p><b>ASPECTO FISCAL</b></p>
+<div class="box">
+<b>FISCAL</b><br><br>
 RGF<br>
 RREO
 </div>
 
-<div class="destaque">
-<p><b>SIGLAS IMPORTANTES</b></p>
+<div class="box">
+
+<b>SIGLAS IMPORTANTES</b><br><br>
 
 RREO = Relatório Resumido da Execução Orçamentária<br><br>
+
 RGF = Relatório de Gestão Fiscal<br><br>
+
 BP = Balanço Patrimonial<br><br>
+
 DVP = Demonstração das Variações Patrimoniais<br><br>
+
 LRF = Lei de Responsabilidade Fiscal<br><br>
+
 VPA = Variação Patrimonial Aumentativa<br><br>
+
 VPD = Variação Patrimonial Diminutiva
+
 </div>
 
-<div class="rodape">
-Curso de Contabilidade Professor Moreira
-</div>
 </div>
 
 <div class="nav">
-<button class="voltar" onclick="anterior()">⬅ Voltar</button>
-<button class="reiniciar" onclick="reiniciar()">🔄 Reiniciar</button>
-<button class="proximo" onclick="proximo()">Próximo ➡</button>
+
+<button class="voltar" onclick="anterior()">
+⬅ Voltar
+</button>
+
+<button class="reiniciar" onclick="reiniciar()">
+🔄 Reiniciar
+</button>
+
+<button class="proximo" onclick="proximo()">
+Próximo ➡
+</button>
+
 </div>
 
 <script>
-let atual=0;
-const slides=document.querySelectorAll('.slide');
 
-function mostrar(n){
-slides.forEach(s=>s.classList.remove('active'));
-slides[n].classList.add('active');
+let slideAtual = 0;
+
+const slides = document.querySelectorAll('.slide');
+
+function mostrarSlide(indice){
+
+slides.forEach(function(slide){
+slide.style.display = 'none';
+});
+
+slides[indice].style.display = 'block';
+
+slideAtual = indice;
+
 }
 
 function proximo(){
-if(atual<slides.length-1){
-atual++;
-mostrar(atual);
+
+if(slideAtual < slides.length - 1){
+
+mostrarSlide(slideAtual + 1);
+
 }
+
 }
 
 function anterior(){
-if(atual>0){
-atual--;
-mostrar(atual);
+
+if(slideAtual > 0){
+
+mostrarSlide(slideAtual - 1);
+
 }
+
 }
 
 function reiniciar(){
-atual=0;
-mostrar(atual);
+
+mostrarSlide(0);
+
 }
+
+mostrarSlide(0);
+
 </script>
 
 </body>
